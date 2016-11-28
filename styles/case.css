@@ -99,3 +99,42 @@ ul{
 .case-img-large img{
 	width: 100%;
 }
+
+footer {
+  background-color: #000;
+  color: #fff; }
+  footer .footer-nav ul {
+    margin: 0.2rem 0;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    background-clip: content-box;
+    border-bottom: 1px solid #4F4F4F; }
+  footer li {
+    display: inline-block;
+    width: 0.8rem;
+    text-align: center;
+    border-left: 1px solid; }
+  footer .contact .intro-content {
+    margin-left: -0.15rem; }
+    footer .contact .intro-content > .float {
+      float: left;
+      width: 30%;
+      padding-left: 0.15rem;
+      box-sizing: border-box; }
+      footer .contact .intro-content > .float .layout {
+        margin: 0 auto;
+        overflow: hidden; }
+  footer .contact .contact-content {
+    margin-left: 0.6rem;
+    width: 7rem; }
+  footer .contact > h3 {
+    float: left;
+    width: 1rem;
+    height: 1.6rem;
+    font-size: 12px;
+    text-align: center; }
+  .contact-content > div h5, .contact-content > div p {
+    display: inline-block; }
+  footer .contact .QRcord img {
+    width: 0.7rem;
+    height: 0.7rem; }
