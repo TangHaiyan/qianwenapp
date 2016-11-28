@@ -1,0 +1,682 @@
+@import "mixin";
+
+/*banner*/
+#banner {
+  width: 100%;
+  // height: 100%;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;        /*box-shadow: 0 0 0 10px #C1BFBF;*/
+  }
+}
+
+/*为做响应式，添加的一个展位元素，标签相对定位的父元素*/
+.seat {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  @include layout(20%);
+
+  .intro-content {
+    .float {
+      
+      // height: 100px;
+    }
+  }
+  img {
+    visibility: hidden;
+  }
+  .intro-content .float {
+    height: 12em;
+  }
+  h3, p {
+    margin-left: 10%;
+    text-align: left;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-top: 10%;
+    margin-bottom: 0.8em;
+    color: $secondFont;
+
+    i {
+      font-size: 1.2em;
+    }
+  }
+  p {
+    font-size: 0.8em;
+    color: $thirdFont;
+
+    a {
+      color: $thirdFont;
+    }
+    a:hover {
+      color: $mainColor;
+      text-decoration: underline;
+    }
+  }
+  .float {
+    &:hover {
+      background-color: $fourthColor;
+      background-clip: content-box;
+
+      p, h3, p>a {
+        color: #fff;
+      }
+    }
+  }
+  .z-active {
+    background-color: $fourthColor;
+
+    p, h3, p>a {
+      color: #fff;
+    }
+    background-clip: content-box;
+  }
+}
+
+/*.......................*/
+
+
+/*banner的响应式布局变化，主要是curosr*/
+@media screen and (min-width:60em) {
+  .seat {
+    @include layout(20%);
+
+    .intro-content {
+      .float {
+        border-radius: 3em 3em 3em 3em;
+        // height: 150px;
+      }
+    }
+  }
+  .service {
+     margin: 9em auto 2em;
+   }
+}
+@media screen and (max-width:60em) and  (min-width:37.5em) {
+  .seat {
+    @include layout(20%);
+
+    .intro-content {
+      // width: 60%;
+
+      .float {
+        border-radius: 1em 1em 1em 1em;
+        height: 5em;
+
+        .layout p {
+          display: none;
+        }
+      }
+    }
+  }
+  .service {
+    margin: 3em auto 2em;
+  }
+}
+@media screen and (max-width:600px) and  (min-width:500px) {
+  .seat {
+    @include layout(20%);
+
+    .intro-content {
+      .float {
+        border-radius: 1em 1em 1em 1em;
+        height: 4em;
+
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:600px) and  (min-width:320px) {
+  .seat .intro-content {
+    display: none;
+  }
+  .centent {
+    margin-top: 0.8px;
+  }
+  .service {
+    margin: 1em auto;
+  }
+}
+
+/*服务列表*/
+.service {
+  // margin: 8em auto;
+  width: 80%;
+  overflow: hidden;
+  @extend .h2css;
+
+  .title {
+    float: left;
+    top: 0;
+    bottom: 0;
+    width: 9.5em;
+    background: linear-gradient(to bottom, $mainColor, $fourthColor);
+    margin-bottom: -1000px;
+    padding-bottom: 1000px;
+    height: 16em;
+    color: #fff;
+
+    h3, p {
+      width: 80%;
+      margin: 0 auto;
+    }
+    h3 {
+      font-size: 1rem;
+      height: 2em;
+      margin: 1.2em;
+      // line-height: 30px;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  .service-intro {
+    margin-left: 16em;
+    @include layout(50%);
+
+    .intro-content {
+      margin-bottom: 1.2em;
+
+      h4, p {
+        margin: 0.4em 0.4em;
+      }
+      h4 {
+        margin-top: 0.6em;
+        font-size: 1rem;
+        color: $secondFont;
+      }
+      p {
+        font-size: 0.8rem;
+        color: $thirdFont;
+      }
+      .service-bg {
+        // padding-right: 3px;
+
+        &:hover {
+          >a {
+            display: block;
+            box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, .25);
+          }
+        }
+      }
+    }
+    .service-img {
+      width: 100%;
+      height: 10em;
+      background: url(../images/intro2.jpg);
+      background-size: 25em 20em;
+    }
+  }
+ }
+
+ /*服务的媒体查询*/
+@media screen and (max-width:650px) and  (min-width:320px) {
+  .service {
+    .service-intro {
+      // width: 100%;
+      @include layout(50%);
+      margin-left:0;
+    }
+    .title {
+     display:none;
+    }
+    .float{
+      height:10em;
+      overflow:hidden;
+      //background-clip:
+    }
+  }
+}
+
+/*合作客户区域*/
+.customers-logo {
+  margin: 0 auto 2em;
+  width: 80%;
+  @extend .h2css;
+
+  @at-root .customers-title {
+    text-align: center;
+
+    // h2 {
+      //  margin-right: 10px;
+      //
+    }
+    // span:nth-child(2) {
+      //  margin-left: 10px;
+      //  color: #78F9FD;
+
+      //
+      @include layout(33.3%);
+      p {
+        height: 2em;
+        line-height: 2em;
+        font-size: 0.8rem;
+        color: #888686;
+      }
+      .customers-bg {
+        h3 {
+          height: 2.5em;
+          line-height: 2.5em;
+          font-size: 1rem;
+          color: $secondFont;
+        }
+
+
+        .customers-img {
+          width: 100%;
+          height: 6em;
+          background: url(../images/customerlogo.png);
+          background-size: 100% 500%;
+        }
+        .img-163 {
+          background: url(../images/customerlogo163.png);
+          background-position: 0 0;
+          background-size: 100% 6.25em;
+        }
+        .img-lemon {
+          background-position: 0 0;
+        }
+        .img-tpy {
+          background-position: 0 25%;
+        }
+        .img-sd {
+          background-position: 0 50%;
+        }
+        .img-mt {
+          background-position: 0 75%;
+        }
+        .img-hi {
+          background-position: 0 100%;
+        }
+        h3 {
+          text-align: center;
+        }
+      }
+    }
+
+/*业界评价*/
+.customers-appraise1 {
+  margin: 0 auto 2em;
+  width: 80%;
+  @extend .h2css;
+
+
+    @include layout(25%);
+
+    .intro-content {
+      vertical-align: middle;
+    }
+    img {
+      width: 3em;
+      height: 3em;
+      border-radius: 50%;
+    }
+    p {
+      font-size: 0.8rem;
+      color: #888686;
+    }
+    h3 {
+      min-width: 7em;
+      height: 4.5em;
+      display: inline-block;
+      font-size: 0.9rem;
+      vertical-align: middle;
+      color: #404040;
+    }
+  }
+
+
+
+/*案例*/
+.case {
+  margin: 0 auto 2em;
+  width: 80%;
+  @extend .h2css;
+  @include layout(33.3%);
+
+  .intro-content {
+    .case-img {
+      position: relative;
+      height: 12.5em;
+      width: 100%;
+      // background: url(../images/intro1-icon.png) no-repeat;
+      // background-size: 500% 100%;
+
+      /*根据htmlfont-size和bgsize大小计算而得*/
+      &:hover {
+        .layer {
+          height: 100%;
+        }
+      }
+    }
+    .img-lemon {
+      background: url(../images/case1.png) no-repeat;
+      background-position: 0 0;
+    }
+    .img-tpy {
+      background: url(../images/case2.png) no-repeat;
+      background-position: 25% 0;
+    }
+    .img-jy {
+      background: url(../images/case3.png) no-repeat;
+      background-position: 0 0;
+    }
+    h3 {
+      text-align: center;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+    p {
+      padding: 0.8em 1.5em;
+      vertical-align: middle;
+      z-index: 200;
+    }
+    .layer {
+      position: absolute;
+      // visibility: hidden;
+      bottom: 0px;
+      background-color: rgba(3, 41, 81, 0.7);
+      border: 1px solid #thitdFond;
+      width: 100%;
+      height: 0%;
+      z-index: 10;
+      @include transition(height 500ms);
+      color: #fff;
+
+      h3 {
+        margin-top: 0.8em;
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0, 8rem;
+      }
+    }
+  }
+}
+/*案例媒体查询*/
+@media screen and (max-width:600px) and  (min-width:320px) {
+  .case {
+    @include layout(100%);
+  }
+  .float {
+    margin-bottom: 0.8em;
+  }
+  .layer {
+    position:static;
+    visibility:visible;
+  }
+}
+
+
+
+/*aboutus*/
+.about-content {
+  margin-top: 9em;
+  margin-left: 2.5em;
+
+  .side {
+    // position: fixed;
+    // top: $navLarge+30px;
+    //   left: 20px;
+    // bottom: 150px;
+    float: left;
+    width: 15%;
+    height: 100%;
+
+    ul li {
+      height: 3em;
+      border: 1px solid;
+      right: 20%;
+      background-clip: content-box;
+      // background-color: #000;
+      line-height: 3em;
+      background: linear-gradient(to bottom, $fourthColor, $fourthColor 50%, $fourthColor);
+      // border-bottom: 1px solid $thirdFont;
+      box-shadow: 0 0 0 1px $thirdColor;
+
+      a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+      }
+      &:hover {
+        // background: linear-gradient(to bottom, #3d0101, #610101 20%, #610101 80%, #3d0101);
+        background: #610101;
+
+        span {
+          @include opacity(1);
+        }
+      }
+      span {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 26px solid transparent;
+        border-left: 15px solid #610101;
+        border-bottom: 27px solid transparent;
+        @include opacity(0);
+      }
+    }
+  }
+  .about-intro {
+    margin-left: 25%;
+    width: 60%;
+  }
+}
+@keyframes turnaround {
+  0% {
+    @include transform-rotate(0deg);
+  }
+  100% {
+    @include transform-rotate(360deg);
+  }
+}
+.about-intro {
+  h2 {
+    font-size: 1.1rem;
+    text-align: center;
+    color: $thirdFont;
+
+    span {
+      padding-right: 0.4em;
+      font-size: 1.3rem;
+      color: $secondFont;
+    }
+  }
+  >div {
+    margin-top: 3.5em;
+  }
+  h3 {
+    margin: 1.5em 0;
+    height: 2em;
+    color: $secondFont;
+    font-size: 1.2rem;
+    line-height: 2em;
+    text-align: right;
+    border-bottom: 1px solid $thirdFont;
+  }
+  p {
+    font-size: 0.8rem;
+    color: $thirdFont;
+    line-height: 1.3rem;
+
+    span {
+      font-size: 1rem;
+      color: $secondFont;
+    }
+  }
+  @at-root .brief-intro {
+    @include layout(33.3%);
+
+    .intro-content {
+      margin-top: 1.5em;
+
+      p {
+        margin-top: 0.8em;
+      }
+    }
+    .intro-img {
+      width: 8em;
+      height: 8em;
+      // background-color: $fourthColor;
+      border-radius: 50% 50%;
+      @include animation(turnaround 700ms ease);
+      @include transform-origin(50% 50%);
+
+      h4 {
+        line-height: 8em;
+        text-align: center;
+        color: #fff;
+      }
+    }
+    .img-orientation {
+      background: url(../images/orientation.jpg) no-repeat 0 0;
+    }
+    .img-vision {
+      background: url(../images/vision.jpg) no-repeat 0 0;
+    }
+    .img-value {
+      background: url(../images/value.png) no-repeat 0 0;
+    }
+  }
+}
+.about-intro {
+  @include layout(33.3%);
+
+  .attitude>div {
+    margin: 1.5em auto;
+    width: 60%;
+    vertical-align: top;
+
+    .layout {
+      height: 8em;
+    }
+    h4 {
+      background-color: $fourthColor;
+      line-height: 8em;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+.about-intro .founder {
+  .ceo {
+    overflow: hidden;
+
+    h4 {
+      float: left;
+      width: 5em;
+      background-color: $fourthColor;
+      text-align: center;
+      line-height: 6em;
+      color: #fff;
+      margin-bottom: -500px;
+      padding-bottom: 500px;
+      height: 6em;
+    }
+    p {
+      margin-left: 6em;
+    }
+  }
+  .cxo {
+    margin-top: 1.5em;
+
+    .layout {
+      height: 4em;
+      background-color: $fourthColor;
+      text-align: center;
+      line-height: 4em;
+      color: #fff;
+    }
+  }
+}
+.about-intro .recruit {
+  span {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    font-size: 0.9rem;
+    width: 6em;
+    color: #fff;
+    text-align: center;
+    background-color: $fourthColor;
+    border-left: 1px solid #fff;
+  }
+  img {
+    width: 6em;
+    height: 12em;
+    border: 4px solid #fff;
+    // box-shadow: 0 8px 8px #fff;
+  }
+}
+
+
+
+#container {
+  margin-top: 8em;
+
+  .first-level {
+    width: 50%;
+    margin-bottom: 1.5em;
+    // margin: 10px auto;
+    // text-align: center;
+
+    li {
+      display: inline-block;
+      width: 12em;
+      height: 3em;
+      line-height: 3em;
+      // border: 1px solid;
+      text-align: center;
+    }
+  }
+  .second-level li {
+    display: inline-block;
+    width: 10em;
+    height: 2em;
+    line-height: 2em;
+    // border: 1px solid;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .active {
+    background-color: $fourthColor;
+    color: #fff;
+  }
+  .section {
+    h3 {
+      height: 2em;
+      color: $secondFont;
+      font-size: 1.2rem;
+      line-height: 2em;
+      text-align: left;
+      // text-decoration: underline;
+      border-bottom: 1px solid $thirdFont;
+      margin: 1.5em 0;
+    }
+  }
+  @include layout(33.3%);
+
+  .float {
+    p {
+      color: $thirdFont;
+      font-size: 0.8rem;
+
+      span {
+        display: inline-block;
+        width: 35%;
+        // margin-right: 5px;
+      }
+    }
+  }
+}
