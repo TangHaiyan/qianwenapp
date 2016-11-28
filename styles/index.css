@@ -27,15 +27,28 @@ h1, h2, h3, h4, h5, h6, em, strong, b {
 html {
   font-family: "微软雅黑";
   width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto; }
+  height: 100%; }
 
 body {
-  min-width: 333px;
+  width: 100%;
+  min-width: 320px;
   height: 100%;
   background-color: #ECEBEB;
   font-size: 12px; }
+
+html {
+  overflow-y: scroll; }
+
+:root {
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+:root body {
+  position: absolute; }
+
+body {
+  width: 100vw;
+  overflow-x: hidden; }
 
 /*重置样式*/
 /*css3样式*/
@@ -224,9 +237,9 @@ footer {
   background-color: #000;
   color: #fff; }
   footer .footer-nav ul {
-    margin-bottom: 0.2rem;
-    height: 0.2em;
-    line-height: 0.2rem;
+    margin: 0.2rem 0;
+    height: 0.3rem;
+    line-height: 0.3rem;
     background-clip: content-box;
     border-bottom: 1px solid #4F4F4F; }
   footer li {
@@ -246,8 +259,7 @@ footer {
         overflow: hidden; }
   footer .contact .contact-content {
     margin-left: 0.6rem;
-    width: 7rem;
-    height: 1rem; }
+    width: 7rem; }
   footer .contact > h3 {
     float: left;
     width: 1rem;
@@ -287,17 +299,17 @@ footer {
       .seat .intro-content > .float .layout {
         margin: 0 auto;
         overflow: hidden; }
+  .seat .intro-content .float {
+    min-height: 10em; }
   .seat img {
     visibility: hidden; }
-  .seat .intro-content .float {
-    height: 1.2rem; }
   .seat h3, .seat p {
     margin-left: 10%;
     text-align: left; }
   .seat h3 {
     font-size: 14px;
-    margin-top: 10%;
-    margin-bottom: 0.1rem;
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem;
     color: #504F4F; }
     .seat h3 i {
       font-size: 10px; }
@@ -351,7 +363,7 @@ footer {
     height: 0.8rem; }
     .seat .intro-content .float .layout p {
       display: none; } }
-@media screen and (max-width: 440px) and (min-width: 320px) {
+@media screen and (max-width: 440px) and (min-width: 300px) {
   .seat .intro-content {
     margin-left: -0.15rem; }
     .seat .intro-content > .float {
@@ -418,11 +430,16 @@ footer {
       .service .service-intro .intro-content h4, .service .service-intro .intro-content p {
         margin: 0.05rem 0.05rem; }
       .service .service-intro .intro-content h4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         margin-top: 0.05rem;
         font-size: 14px;
         color: #504F4F; }
       .service .service-intro .intro-content p {
         font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
         color: #888686; }
       .service .service-intro .intro-content .service-bg:hover > a {
         display: block;
@@ -450,7 +467,6 @@ footer {
   .service .title {
     display: none; }
   .service .float {
-    height: 2.3rem;
     overflow: hidden; } }
 @media screen and (max-width: 440px) and (min-width: 300px) {
   .service-intro h4 {
@@ -474,13 +490,12 @@ footer {
         margin: 0 auto;
         overflow: hidden; }
   .customers-logo p {
-    height: 0.5rem;
-    line-height: 14px;
+    margin-bottom: 0.05rem;
+    line-height: 15px;
     font-size: 12px;
     color: #888686; }
   .customers-logo .customers-bg h3 {
-    height: 0.3rem;
-    line-height: 0.3rem;
+    line-height: 0.5rem;
     font-size: 12px;
     color: #504F4F; }
   .customers-logo .customers-bg .customers-img {
@@ -529,13 +544,23 @@ footer {
     font-size: 12px;
     color: #888686; }
   .customers-appraise1 h3 {
-    min-width: 1.2rem;
-    height: 0.25rem;
+    min-width: 2rem;
     display: inline-block;
     font-size: 14px;
     vertical-align: middle;
     color: #404040; }
 
+@media screen and (max-width: 440px) {
+  .customers-appraise1 .intro-content {
+    margin-left: -0.15rem; }
+    .customers-appraise1 .intro-content > .float {
+      float: left;
+      width: 50%;
+      padding-left: 0.15rem;
+      box-sizing: border-box; }
+      .customers-appraise1 .intro-content > .float .layout {
+        margin: 0 auto;
+        overflow: hidden; } }
 /*案例*/
 .case {
   margin: 0.2rem auto 0;
@@ -603,7 +628,10 @@ footer {
       box-sizing: border-box; }
       .case .intro-content > .float .layout {
         margin: 0 auto;
-        overflow: hidden; } }
+        overflow: hidden; }
+
+  .float {
+    margin-bottom: 0.1rem; } }
 /*aboutus*/
 .about-content {
   margin-top: 9em;
