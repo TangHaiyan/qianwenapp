@@ -17,12 +17,12 @@ $thirdFont: #888686;
 /*color*/
 @mixin layout($width) {
   .intro-content {
-    margin-left: -1.5em;
+    margin-left: -0.15rem;
 
     >.float {
       float: left;
       width: $width;
-      padding-left: 1.5em;
+      padding-left: 0.15rem;
       box-sizing: border-box;
 
       .layout {
@@ -43,7 +43,7 @@ $thirdFont: #888686;
     // height:50px;
     // line-height:50px;
     // text-align:center;
-    margin:1em auto 1em;
+    margin:1em auto 0.1rem;
     background-color:#fff;
     // background: linear-gradient(to bottom, $mainColor,$secondColor 50%,$mainColor); 
     // box-shadow:0 2px 2px 2px $thirdColor; 
@@ -52,14 +52,14 @@ $thirdFont: #888686;
    span{
       margin-left:5px;
       color:$fourthColor;
-      font-size:1rem;            
+      font-size:14px;            
    } 
     //margin:70px auto 30px;
-    padding-left:10px;
-    height:3em;
+    padding-left:0.1rem;
+    height:0.5rem;
     // color:$secondFont;
-    font-size:1.2rem;
-    line-height:3em;
+    font-size:18px;
+    line-height:0.5rem;
     text-align:left;     
   }
 
