@@ -10,15 +10,19 @@ $secondFont: #504F4F;
 $thirdFont: #888686;
 // $navmiddle: 80px;
 
+/*font-size*/
+
+
+
 /*color*/
 @mixin layout($width) {
   .intro-content {
-    margin-left: -20px;
+    margin-left: -1.5em;
 
     >.float {
       float: left;
       width: $width;
-      padding-left: 20px;
+      padding-left: 1.5em;
       box-sizing: border-box;
 
       .layout {
@@ -58,5 +62,7 @@ $thirdFont: #888686;
     line-height:3em;
     text-align:left;     
   }
+
+
 
 }

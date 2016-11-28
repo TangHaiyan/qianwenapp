@@ -39,6 +39,7 @@ body {
 /*css3样式*/
 /*$bgcolors main colors blue*/
 /*fontColor grey*/
+/*font-size*/
 /*color*/
 /*h2样式 service case customer*/
 .h2css h2, .service h2, .customers-logo h2, .customers-appraise1 h2, .case h2 {
@@ -310,11 +311,11 @@ footer {
     text-align: center;
     border-left: 1px solid; }
   footer .contact .intro-content {
-    margin-left: -20px; }
+    margin-left: -1.5em; }
     footer .contact .intro-content > .float {
       float: left;
       width: 30%;
-      padding-left: 20px;
+      padding-left: 1.5em;
       box-sizing: border-box; }
       footer .contact .intro-content > .float .layout {
         margin: 0 auto;
@@ -353,11 +354,11 @@ footer {
   right: 0;
   top: 0; }
   .seat .intro-content {
-    margin-left: -20px; }
+    margin-left: -1.5em; }
     .seat .intro-content > .float {
       float: left;
       width: 20%;
-      padding-left: 20px;
+      padding-left: 1.5em;
       box-sizing: border-box; }
       .seat .intro-content > .float .layout {
         margin: 0 auto;
@@ -399,11 +400,11 @@ footer {
 /*banner的响应式布局变化，主要是curosr*/
 @media screen and (min-width: 60em) {
   .seat .intro-content {
-    margin-left: -20px; }
+    margin-left: -1.5em; }
     .seat .intro-content > .float {
       float: left;
       width: 20%;
-      padding-left: 20px;
+      padding-left: 1.5em;
       box-sizing: border-box; }
       .seat .intro-content > .float .layout {
         margin: 0 auto;
@@ -415,11 +416,11 @@ footer {
     margin: 9em auto 2em; } }
 @media screen and (max-width: 60em) and (min-width: 37.5em) {
   .seat .intro-content {
-    margin-left: -20px; }
+    margin-left: -1.5em; }
     .seat .intro-content > .float {
       float: left;
       width: 20%;
-      padding-left: 20px;
+      padding-left: 1.5em;
       box-sizing: border-box; }
       .seat .intro-content > .float .layout {
         margin: 0 auto;
@@ -434,11 +435,11 @@ footer {
     margin: 3em auto 2em; } }
 @media screen and (max-width: 600px) and (min-width: 500px) {
   .seat .intro-content {
-    margin-left: -20px; }
+    margin-left: -1.5em; }
     .seat .intro-content > .float {
       float: left;
       width: 20%;
-      padding-left: 20px;
+      padding-left: 1.5em;
       box-sizing: border-box; }
       .seat .intro-content > .float .layout {
         margin: 0 auto;
@@ -481,13 +482,13 @@ footer {
     .service .title p {
       font-size: 0.8rem; }
   .service .service-intro {
-    margin-left: 16em; }
+    margin-left: 13em; }
     .service .service-intro .intro-content {
-      margin-left: -20px; }
+      margin-left: -1.5em; }
       .service .service-intro .intro-content > .float {
         float: left;
         width: 50%;
-        padding-left: 20px;
+        padding-left: 1.5em;
         box-sizing: border-box; }
         .service .service-intro .intro-content > .float .layout {
           margin: 0 auto;
@@ -509,19 +510,19 @@ footer {
     .service .service-intro .service-img {
       width: 100%;
       height: 10em;
-      background: url(../images/intro2.jpg);
-      background-size: 25em 20em; }
+      background: url(../images/intro2.jpg) no-repeat;
+      background-size: 40em 35em; }
 
 /*服务的媒体查询*/
 @media screen and (max-width: 650px) and (min-width: 320px) {
   .service .service-intro {
     margin-left: 0; }
     .service .service-intro .intro-content {
-      margin-left: -20px; }
+      margin-left: -1.5em; }
       .service .service-intro .intro-content > .float {
         float: left;
         width: 50%;
-        padding-left: 20px;
+        padding-left: 1.5em;
         box-sizing: border-box; }
         .service .service-intro .intro-content > .float .layout {
           margin: 0 auto;
@@ -529,7 +530,7 @@ footer {
   .service .title {
     display: none; }
   .service .float {
-    height: 10em;
+    height: 15em;
     overflow: hidden; } }
 /*合作客户区域*/
 .customers-logo {
@@ -538,18 +539,18 @@ footer {
   .customers-title {
     text-align: center; }
   .customers-logo .intro-content {
-    margin-left: -20px; }
+    margin-left: -1.5em; }
     .customers-logo .intro-content > .float {
       float: left;
       width: 33.3%;
-      padding-left: 20px;
+      padding-left: 1.5em;
       box-sizing: border-box; }
       .customers-logo .intro-content > .float .layout {
         margin: 0 auto;
         overflow: hidden; }
   .customers-logo p {
-    height: 2em;
-    line-height: 2em;
+    height: 3em;
+    line-height: 1.2em;
     font-size: 0.8rem;
     color: #888686; }
   .customers-logo .customers-bg h3 {
@@ -584,11 +585,11 @@ footer {
   margin: 0 auto 2em;
   width: 80%; }
   .customers-appraise1 .intro-content {
-    margin-left: -20px; }
+    margin-left: -1.5em; }
     .customers-appraise1 .intro-content > .float {
       float: left;
       width: 25%;
-      padding-left: 20px;
+      padding-left: 1.5em;
       box-sizing: border-box; }
       .customers-appraise1 .intro-content > .float .layout {
         margin: 0 auto;
@@ -615,11 +616,11 @@ footer {
   margin: 0 auto 2em;
   width: 80%; }
   .case .intro-content {
-    margin-left: -20px; }
+    margin-left: -1.5em; }
     .case .intro-content > .float {
       float: left;
       width: 33.3%;
-      padding-left: 20px;
+      padding-left: 1.5em;
       box-sizing: border-box; }
       .case .intro-content > .float .layout {
         margin: 0 auto;
@@ -642,15 +643,17 @@ footer {
     background-position: 0 0; }
   .case .intro-content h3 {
     text-align: center;
-    font-size: 1.4rem;
-    line-height: 2rem; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
   .case .intro-content p {
-    padding: 0.8em 1.5em;
+    font-size: 0.8rem;
+    line-height: 1.2em;
+    padding: 0.4em 1.5em;
     vertical-align: middle;
     z-index: 200; }
   .case .intro-content .layer {
     position: absolute;
-    bottom: 0px;
+    bottom: 0em;
     background-color: rgba(3, 41, 81, 0.7);
     border: 1px solid #thitdFond;
     width: 100%;
@@ -671,22 +674,15 @@ footer {
 /*案例媒体查询*/
 @media screen and (max-width: 600px) and (min-width: 320px) {
   .case .intro-content {
-    margin-left: -20px; }
+    margin-left: -1.5em; }
     .case .intro-content > .float {
       float: left;
       width: 100%;
-      padding-left: 20px;
+      padding-left: 1.5em;
       box-sizing: border-box; }
       .case .intro-content > .float .layout {
         margin: 0 auto;
-        overflow: hidden; }
-
-  .float {
-    margin-bottom: 0.8em; }
-
-  .layer {
-    position: static;
-    visibility: visible; } }
+        overflow: hidden; } }
 /*aboutus*/
 .about-content {
   margin-top: 9em;
@@ -765,11 +761,11 @@ footer {
     font-size: 1rem;
     color: #504F4F; }
 .brief-intro .intro-content {
-  margin-left: -20px; }
+  margin-left: -1.5em; }
   .brief-intro .intro-content > .float {
     float: left;
     width: 33.3%;
-    padding-left: 20px;
+    padding-left: 1.5em;
     box-sizing: border-box; }
     .brief-intro .intro-content > .float .layout {
       margin: 0 auto;
@@ -801,11 +797,11 @@ footer {
   background: url(../images/value.png) no-repeat 0 0; }
 
 .about-intro .intro-content {
-  margin-left: -20px; }
+  margin-left: -1.5em; }
   .about-intro .intro-content > .float {
     float: left;
     width: 33.3%;
-    padding-left: 20px;
+    padding-left: 1.5em;
     box-sizing: border-box; }
     .about-intro .intro-content > .float .layout {
       margin: 0 auto;
@@ -890,11 +886,11 @@ footer {
     border-bottom: 1px solid #888686;
     margin: 1.5em 0; }
   #container .intro-content {
-    margin-left: -20px; }
+    margin-left: -1.5em; }
     #container .intro-content > .float {
       float: left;
       width: 33.3%;
-      padding-left: 20px;
+      padding-left: 1.5em;
       box-sizing: border-box; }
       #container .intro-content > .float .layout {
         margin: 0 auto;
