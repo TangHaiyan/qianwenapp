@@ -24,22 +24,31 @@
     </style>
   </head>
   <body>
-    <nav class="top-nav">
-      <div class="logo">
-        <img src="images/logo.png" alt="千问网络">
-        <div>
-          <h1><span>千问网络</span><span>www.qw1000.cn</span></h1>
-          <p>互联网+营销解决方案服务商</p>        
-        </div>
-
+  <nav class="top-nav">
+    <div class="logo">
+       <img src="images/logo.png" alt="千问网络">
+      <div>
+        <h1><span>千问网络</span><span>www.qw1000.cn</span></h1>
+        <p>互联网+营销解决方案服务商</p>        
       </div>
-      <ul>
-        <li class="active"><a href="index.html">首页 </a></li>
-        <li><a href="about.html">我们 </a></li>
-        <li><a href="service.html">服务 </a></li> 
-        <li><a href="case1.html">案例 </a></li>
-      </ul>
-    </nav>
+
+    </div>
+    <ul class="frist-nav">
+      <li><a href="index.html">首页 </a></li>
+      <li><a href="about.html">我们 </a></li>
+      <li><a href="service.html">服务 </a></li> 
+      <li><a href="case1.html">案例 </a></li>
+      <li class="icon">
+         <span></span>
+         <ul class="second-nav">
+            <li><a href="index.html">首页 </a></li>
+            <li><a href="about.html">我们 </a></li>
+            <li><a href="service.html">服务 </a></li> 
+            <li><a href="case1.html">案例 </a></li>           
+         </ul>
+      </li>
+    </ul>
+  </nav>
     <article class="about-content clearfix">
 <!--        <div class="side">
           
@@ -139,11 +148,10 @@
     <footer>    
         <nav class="footer-nav">
           <ul>
-            <li><a href="">首页<span></span></a></li>
-            <li><a href="">我们<span></span></a></li>
-            <li><a href="">服务<span></span></a></li>
-            <li><a href="">案例<span></span></a></li>
-            <li><a href="">客户<span></span></a></li>
+            <li><a href="index.html">首页<span></span></a></li>
+            <li><a href="about.html">我们<span></span></a></li>
+            <li><a href="service.html">服务<span></span></a></li>
+            <li><a href="case.html">案例<span></span></a></li>
           </ul>
         </nav> 
 
@@ -206,6 +214,45 @@
           // $('html,body').scrollTop(130);
          });
   
+    </script>
+    <script type="text/javascript">
+
+     //window.onresize = function(){
+        // var screenWidth = window.innerWidth;
+        // //console.log(screenWidth);
+        // //var htmlFont = 
+        //  var html = document.getElementsByTagName("html")[0];
+        //  //console.log(html);
+        //  html.style.fontSize = screenWidth/1366 * 16 + 'px';  
+        //  //console.log(html.style.fontSize);    
+
+
+        function adapt(designWidth, rem2px){
+          var d = window.document.createElement('div');
+          d.style.width = '1rem';
+          d.style.display = "none";
+          var head = window.document.getElementsByTagName('head')[0];
+          head.appendChild(d);
+          var defaultFontSize = parseFloat(window.getComputedStyle(d, null).getPropertyValue('width'));
+          d.remove();
+          document.documentElement.style.fontSize = window.innerWidth / designWidth * rem2px / defaultFontSize * 100 + '%';
+
+          var x=window.innerWidth / designWidth * rem2px / defaultFontSize * 100 + '%';
+          console.log(x);
+
+          var st = document.createElement('style');
+          var portrait = "@media screen and (min-width: "+window.innerWidth+"px) {html{font-size:"+ ((window.innerWidth/(designWidth/rem2px)/defaultFontSize)*100) +"%;}}";
+          var landscape = "@media screen and (min-width: "+window.innerHeight+"px) {html{font-size:"+ ((window.innerHeight/(designWidth/rem2px)/defaultFontSize)*100) +"%;}}"
+          st.innerHTML = portrait + landscape;
+          console.log(st.innerHTML);
+          head.appendChild(st);
+          return defaultFontSize
+        };
+        var defaultFontSize = adapt(640, 100);
+        console.log(defaultFontSize);
+
+     //}
+
     </script>
    
   </body>
