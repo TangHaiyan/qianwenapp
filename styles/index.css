@@ -57,174 +57,56 @@ body {
 /*font-size*/
 /*color*/
 /*h2样式 service case customer*/
-.h2css h2, .service h2, .customers-logo h2, .customers-appraise1 h2, .case h2 {
-  margin: 1em auto 0.1rem;
+.h2css h2, .container h2 {
   background-color: #fff;
   color: #032951;
-  padding-left: 0.1rem;
-  height: 0.5rem;
+  height: 50px;
   font-size: 18px;
-  line-height: 0.5rem;
+  line-height: 50px;
   text-align: left; }
-  .h2css h2 span, .service h2 span, .customers-logo h2 span, .customers-appraise1 h2 span, .case h2 span {
+  .h2css h2 span, .container h2 span {
     margin-left: 5px;
     color: #8AABCA;
     font-size: 14px; }
 
 /*变量*/
 /*=nav*/
-.banner, .seat {
-  margin-top: 1rem; }
-
-.about-content {
-  margin-top: 1rem; }
-
-nav.top-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  background-color: #fff;
-  z-index: 100; }
-  nav.top-nav ul.frist-nav {
-    position: absolute;
-    right: 20%; }
-  nav.top-nav .frist-nav > li {
-    float: left;
-    width: 3em;
-    color: #000; }
-    nav.top-nav .frist-nav > li a {
-      display: inline-block;
-      font-size: 18px;
-      text-align: center;
-      width: 100%;
-      color: #000; }
-    nav.top-nav .frist-nav > li:hover {
-      background-color: #8AABCA; }
-      nav.top-nav .frist-nav > li:hover a {
-        color: #fff; }
-  nav.top-nav .frist-nav .icon {
-    display: none;
-    position: relative; }
-    nav.top-nav .frist-nav .icon span {
-      display: inline-block;
-      width: 0.15rem;
-      height: 0.03rem;
-      padding: 0.03rem 0;
-      border-top: 0.03rem solid #8AABCA;
-      border-bottom: 0.03rem solid #8AABCA;
-      background-color: #8AABCA;
-      background-clip: content-box;
-      vertical-align: middle; }
-    nav.top-nav .frist-nav .icon:hover .second-nav {
-      display: block; }
-      nav.top-nav .frist-nav .icon:hover .second-nav a {
-        color: #000; }
-  nav.top-nav .active {
-    background-color: #8AABCA; }
-    nav.top-nav .active a {
-      color: #fff; }
-  nav.top-nav .logo {
+nav.navbar .navbar-brand {
+  padding: 7px 5px;
+  display: block;
+  height: 100%; }
+  nav.navbar .navbar-brand img {
+    width: 35px;
+    display: block;
     float: left; }
-  nav.top-nav .second-nav {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    top: 2em; }
-    nav.top-nav .second-nav li {
-      margin-top: 0px;
-      width: 4em;
-      height: 2em;
-      line-height: 2em; }
-      nav.top-nav .second-nav li a {
-        border-bottom: 1px solid #8AABCA; }
-    nav.top-nav .second-nav li:first-child {
-      margin-top: 0; }
+  nav.navbar .navbar-brand > div {
+    margin-left: 50px;
+    vertical-align: middle; }
+  nav.navbar .navbar-brand h1 {
+    margin: 0 0;
+    font-size: 16px; }
+  nav.navbar .navbar-brand h2 {
+    margin: 5px 0 0 0;
+    font-size: 12px; }
+  nav.navbar .navbar-brand p {
+    font-size: 14px; }
+nav.navbar .navbar-right {
+  height: 100%;
+  font-size: 14px; }
+  nav.navbar .navbar-right li {
+    height: 100%;
+    line-height: 100%;
+    font-size: 14px; }
 
-@media screen and (min-width: 768px) {
-  nav.top-nav {
-    height: 0.8rem; }
-    nav.top-nav .logo {
-      height: 0.8rem;
-      margin: 0.1rem 0.3rem 0.1rem; }
-    nav.top-nav li {
-      height: 0.48rem;
-      line-height: 0.48rem;
-      margin-top: 0.16rem;
-      font-size: 18px; }
-    nav.top-nav .logo {
-      color: #504F4F;
-      width: 60%; }
-      nav.top-nav .logo img {
-        width: 0.6rem; }
-      nav.top-nav .logo > div {
-        display: inline-block;
-        margin-left: 0.1em; }
-        nav.top-nav .logo > div h1 {
-          font-size: 18px; }
-        nav.top-nav .logo > div span:nth-child(2) {
-          margin-left: 5px;
-          font-size: 12.6px; }
-        nav.top-nav .logo > div p {
-          font-size: 14.4px; }
-    nav.top-nav .second-nav li a {
-      font-size: 16.2px; } }
-@media screen and (max-width: 768px) and (min-width: 440px) {
-  nav.top-nav {
-    height: 0.8rem; }
-    nav.top-nav .logo {
-      height: 0.8rem;
-      margin: 0.1rem 0.3rem 0.1rem; }
-    nav.top-nav li {
-      height: 0.48rem;
-      line-height: 0.48rem;
-      margin-top: 0.16rem;
-      font-size: 16px; }
-    nav.top-nav .logo {
-      color: #504F4F;
-      width: 60%; }
-      nav.top-nav .logo img {
-        width: 0.6rem; }
-      nav.top-nav .logo > div {
-        display: inline-block;
-        margin-left: 0.1em; }
-        nav.top-nav .logo > div h1 {
-          font-size: 16px; }
-        nav.top-nav .logo > div span:nth-child(2) {
-          margin-left: 5px;
-          font-size: 11.2px; }
-        nav.top-nav .logo > div p {
-          font-size: 12.8px; }
-    nav.top-nav .second-nav li a {
-      font-size: 14.4px; } }
-@media screen and (max-width: 440px) and (max-width: 320px) {
-  nav.top-nav {
-    height: 0.8rem; }
-    nav.top-nav .logo {
-      height: 0.8rem;
-      margin: 0.1rem 0.3rem 0.1rem; }
-    nav.top-nav li {
-      height: 0.48rem;
-      line-height: 0.48rem;
-      margin-top: 0.16rem;
-      font-size: 12px; }
-    nav.top-nav .logo {
-      color: #504F4F;
-      width: 60%; }
-      nav.top-nav .logo img {
-        width: 0.6rem; }
-      nav.top-nav .logo > div {
-        display: inline-block;
-        margin-left: 0.1em; }
-        nav.top-nav .logo > div h1 {
-          font-size: 12px; }
-        nav.top-nav .logo > div span:nth-child(2) {
-          margin-left: 5px;
-          font-size: 8.4px; }
-        nav.top-nav .logo > div p {
-          font-size: 9.6px; }
-    nav.top-nav .second-nav li a {
-      font-size: 10.8px; } }
+@media (min-width: 768px) {
+  nav.navbar {
+    background-color: red; }
+    nav.navbar img {
+      width: 50px; }
+    nav.navbar h1 {
+      font-size: 20px; }
+    nav.navbar h1, nav.navbar h2 {
+      display: inline-block; } }
 @media screen and (max-width: 768px) {
   nav.top-nav .frist-nav {
     left: 80%; }
@@ -247,16 +129,13 @@ footer {
     width: 0.8rem;
     text-align: center;
     border-left: 1px solid; }
-  footer .contact .intro-content {
-    margin-left: -0.15rem; }
-    footer .contact .intro-content > .float {
+  footer .contact > div {
+    margin-left: -20px; }
+    footer .contact > div > div {
       float: left;
       width: 30%;
-      padding-left: 0.15rem;
+      padding-left: 20px;
       box-sizing: border-box; }
-      footer .contact .intro-content > .float .layout {
-        margin: 0 auto;
-        overflow: hidden; }
   footer .contact .contact-content {
     margin-left: 0.6rem;
     width: 7rem; }
@@ -273,557 +152,50 @@ footer {
     height: 0.7rem; }
 
 /*公共部分，导航和底部*/
-/*banner*/
-#banner {
-  width: 100%; }
-  #banner img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    /*box-shadow: 0 0 0 10px #C1BFBF;*/ }
+.slide {
+  margin-top: 80px; }
 
-/*为做响应式，添加的一个展位元素，标签相对定位的父元素*/
-.seat {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0; }
-  .seat .intro-content {
-    margin-left: -0.15rem; }
-    .seat .intro-content > .float {
-      float: left;
-      width: 20%;
-      padding-left: 0.15rem;
-      box-sizing: border-box; }
-      .seat .intro-content > .float .layout {
-        margin: 0 auto;
-        overflow: hidden; }
-  .seat .intro-content .float {
-    min-height: 10em; }
-  .seat img {
-    visibility: hidden; }
-  .seat h3, .seat p {
-    margin-left: 10%;
-    text-align: left; }
-  .seat h3 {
-    font-size: 14px;
-    margin-top: 0.05rem;
-    margin-bottom: 0.05rem;
-    color: #504F4F; }
-    .seat h3 i {
-      font-size: 10px; }
-  .seat p {
-    font-size: 12px;
-    color: #888686; }
-    .seat p a {
-      color: #888686; }
-    .seat p a:hover {
-      color: #032951;
-      text-decoration: underline; }
-  .seat .float:hover {
-    background-color: #8AABCA;
-    background-clip: content-box; }
-    .seat .float:hover p, .seat .float:hover h3, .seat .float:hover p > a {
-      color: #fff; }
-  .seat .z-active {
-    background-color: #8AABCA;
-    background-clip: content-box; }
-    .seat .z-active p, .seat .z-active h3, .seat .z-active p > a {
-      color: #fff; }
+@media (max-width: 768px) {
+  .slide {
+    margin-top: 60px; } }
+.intros {
+  margin-top: 10px; }
+  .intros > div {
+    height: 100%;
+    border: 1px solid #fff; }
+    .intros > div h3 {
+      font-size: 16px; }
+    .intros > div p {
+      font-size: 12px; }
 
-/*.......................*/
-/*banner的响应式布局变化，主要是curosr*/
-@media screen and (min-width: 768px) {
-  .seat .intro-content {
-    margin-left: -0.15rem; }
-    .seat .intro-content > .float {
-      float: left;
-      width: 20%;
-      padding-left: 0.15rem;
-      box-sizing: border-box; }
-      .seat .intro-content > .float .layout {
-        margin: 0 auto;
-        overflow: hidden; }
-  .seat .intro-content .float {
-    border-radius: 0.2rem 0.2rem 0.2rem 0.2rem; } }
-@media screen and (max-width: 768px) and (min-width: 440px) {
-  .seat .intro-content {
-    margin-left: -0.15rem; }
-    .seat .intro-content > .float {
-      float: left;
-      width: 20%;
-      padding-left: 0.15rem;
-      box-sizing: border-box; }
-      .seat .intro-content > .float .layout {
-        margin: 0 auto;
-        overflow: hidden; }
-  .seat .intro-content .float {
-    border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
-    height: 0.8rem; }
-    .seat .intro-content .float .layout p {
-      display: none; } }
-@media screen and (max-width: 440px) and (min-width: 300px) {
-  .seat .intro-content {
-    margin-left: -0.15rem; }
-    .seat .intro-content > .float {
-      float: left;
-      width: 20%;
-      padding-left: 0.15rem;
-      box-sizing: border-box; }
-      .seat .intro-content > .float .layout {
-        margin: 0 auto;
-        overflow: hidden; }
-  .seat .intro-content .float {
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-    height: 4em; }
-    .seat .intro-content .float p {
-      display: none; }
+.service-title > div {
+  margin: 0 auto; }
 
-  .service {
-    margin: 0.5rem auto 0; } }
-@media screen and (max-width: 600px) and (min-width: 320px) {
-  .seat .intro-content {
-    display: none; }
-
-  .centent {
-    margin-top: 0.8px; } }
-/*服务列表*/
-.service {
-  margin: 1rem auto 0;
-  width: 80%;
-  overflow: hidden; }
-  .service .title {
-    float: left;
-    top: 0;
-    bottom: 0;
-    width: 1.2rem;
-    background: linear-gradient(to bottom, #032951, #8AABCA);
-    margin-bottom: -1000px;
-    padding-bottom: 1000px;
-    height: 1.6rem;
-    color: #fff; }
-    .service .title h3, .service .title p {
-      width: 90%;
-      margin: 0 auto; }
-    .service .title h3 {
-      font-size: 16px;
-      height: 0.3rem;
-      line-height: 20px;
-      margin: 0.2rem auto; }
-    .service .title p {
-      font-size: 14px; }
-  .service .service-intro {
-    margin-left: 1.4rem; }
-    .service .service-intro .intro-content {
-      margin-left: -0.15rem; }
-      .service .service-intro .intro-content > .float {
-        float: left;
-        width: 50%;
-        padding-left: 0.15rem;
-        box-sizing: border-box; }
-        .service .service-intro .intro-content > .float .layout {
-          margin: 0 auto;
-          overflow: hidden; }
-    .service .service-intro .intro-content {
-      margin-bottom: 0.15rem; }
-      .service .service-intro .intro-content h4, .service .service-intro .intro-content p {
-        margin: 0.05rem 0.05rem; }
-      .service .service-intro .intro-content h4 {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        margin-top: 0.05rem;
-        font-size: 14px;
-        color: #504F4F; }
-      .service .service-intro .intro-content p {
-        font-size: 12px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        color: #888686; }
-      .service .service-intro .intro-content .service-bg:hover > a {
-        display: block;
-        box-shadow: 0 0.02rem 0.05rem rgba(0, 0, 0, 0.25); }
-    .service .service-intro .service-img {
-      width: 100%;
-      height: 1.6rem;
-      background: url(../images/intro2.jpg) no-repeat;
-      background-size: 4.5rem 3.5rem; }
-
-/*服务的媒体查询*/
-@media screen and (max-width: 640px) and (min-width: 320px) {
-  .service .service-intro {
-    margin-left: 0; }
-    .service .service-intro .intro-content {
-      margin-left: -0.15rem; }
-      .service .service-intro .intro-content > .float {
-        float: left;
-        width: 50%;
-        padding-left: 0.15rem;
-        box-sizing: border-box; }
-        .service .service-intro .intro-content > .float .layout {
-          margin: 0 auto;
-          overflow: hidden; }
-  .service .title {
-    display: none; }
-  .service .float {
-    overflow: hidden; } }
-@media screen and (max-width: 440px) and (min-width: 300px) {
-  .service-intro h4 {
-    font-size: 12px; }
-  .service-intro p {
-    font-size: 10px; } }
-/*合作客户区域*/
-.customers-logo {
-  margin: 0.3rem auto 0;
-  width: 80%; }
-  .customers-title {
-    text-align: center; }
-  .customers-logo .intro-content {
-    margin-left: -0.15rem; }
-    .customers-logo .intro-content > .float {
-      float: left;
-      width: 33.3%;
-      padding-left: 0.15rem;
-      box-sizing: border-box; }
-      .customers-logo .intro-content > .float .layout {
-        margin: 0 auto;
-        overflow: hidden; }
-  .customers-logo p {
-    margin-bottom: 0.05rem;
-    line-height: 15px;
-    font-size: 12px;
-    color: #888686; }
-  .customers-logo .customers-bg h3 {
-    line-height: 0.5rem;
-    font-size: 12px;
-    color: #504F4F; }
-  .customers-logo .customers-bg .customers-img {
-    width: 100%;
-    height: 0.5rem;
-    background: url(../images/customerlogo.png);
-    background-size: 100% 500%; }
-  .customers-logo .customers-bg .img-163 {
-    background: url(../images/customerlogo163.png);
-    background-position: 0 0;
-    background-size: 100% 6.25em; }
-  .customers-logo .customers-bg .img-lemon {
-    background-position: 0 0; }
-  .customers-logo .customers-bg .img-tpy {
-    background-position: 0 25%; }
-  .customers-logo .customers-bg .img-sd {
-    background-position: 0 50%; }
-  .customers-logo .customers-bg .img-mt {
-    background-position: 0 75%; }
-  .customers-logo .customers-bg .img-hi {
-    background-position: 0 100%; }
-  .customers-logo .customers-bg h3 {
-    text-align: center; }
-
-/*业界评价*/
-.customers-appraise1 {
-  margin: 0.2rem auto 0.2rem;
-  width: 80%; }
-  .customers-appraise1 .intro-content {
-    margin-left: -0.15rem; }
-    .customers-appraise1 .intro-content > .float {
-      float: left;
-      width: 25%;
-      padding-left: 0.15rem;
-      box-sizing: border-box; }
-      .customers-appraise1 .intro-content > .float .layout {
-        margin: 0 auto;
-        overflow: hidden; }
-  .customers-appraise1 .intro-content {
-    vertical-align: middle; }
-  .customers-appraise1 img {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%; }
-  .customers-appraise1 p {
-    font-size: 12px;
-    color: #888686; }
-  .customers-appraise1 h3 {
-    min-width: 2rem;
-    display: inline-block;
-    font-size: 14px;
-    vertical-align: middle;
-    color: #404040; }
-
-@media screen and (max-width: 440px) {
-  .customers-appraise1 .intro-content {
-    margin-left: -0.15rem; }
-    .customers-appraise1 .intro-content > .float {
-      float: left;
-      width: 50%;
-      padding-left: 0.15rem;
-      box-sizing: border-box; }
-      .customers-appraise1 .intro-content > .float .layout {
-        margin: 0 auto;
-        overflow: hidden; } }
-/*案例*/
-.case {
-  margin: 0.2rem auto 0;
-  width: 80%; }
-  .case .intro-content {
-    margin-left: -0.15rem; }
-    .case .intro-content > .float {
-      float: left;
-      width: 33.3%;
-      padding-left: 0.15rem;
-      box-sizing: border-box; }
-      .case .intro-content > .float .layout {
-        margin: 0 auto;
-        overflow: hidden; }
-  .case .intro-content .case-img {
-    position: relative;
-    height: 1.7rem;
-    width: 100%;
-    /*根据htmlfont-size和bgsize大小计算而得*/ }
-    .case .intro-content .case-img:hover .layer {
-      height: 100%; }
-  .case .intro-content .img-lemon {
-    background: url(../images/case1.png) no-repeat;
-    background-position: 0 0; }
-  .case .intro-content .img-tpy {
-    background: url(../images/case2.png) no-repeat;
-    background-position: 25% 0; }
-  .case .intro-content .img-jy {
-    background: url(../images/case3.png) no-repeat;
-    background-position: 0 0; }
-  .case .intro-content h3 {
-    margin-top: 0.1rem;
-    text-align: center;
-    font-size: 14px;
-    line-height: 16px; }
-  .case .intro-content p {
-    font-size: 12px;
-    line-height: 14px;
-    padding: 0.05rem 0.1rem;
-    vertical-align: middle;
-    z-index: 200; }
-  .case .intro-content .layer {
-    position: absolute;
-    bottom: 0em;
-    background-color: rgba(3, 41, 81, 0.7);
-    border: 1px solid #thitdFond;
-    width: 100%;
-    height: 0%;
-    z-index: 10;
-    -webkit-transition: height 500ms;
-    -moz-transition: height 500ms;
-    -ms-transition: height 500ms;
-    -o-transition: height 500ms;
-    transition: height 500ms;
-    color: #fff; }
-
-/*案例媒体查询*/
-@media screen and (max-width: 600px) and (min-width: 320px) {
-  .case .intro-content {
-    margin-left: -0.15rem; }
-    .case .intro-content > .float {
-      float: left;
-      width: 100%;
-      padding-left: 0.15rem;
-      box-sizing: border-box; }
-      .case .intro-content > .float .layout {
-        margin: 0 auto;
-        overflow: hidden; }
-
-  .float {
-    margin-bottom: 0.1rem; } }
-/*aboutus*/
-.about-content {
-  margin-top: 0.2rem; }
-  .about-content .about-intro {
-    margin: 0 auto;
-    width: 70%; }
-
-@keyframes turnaround {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-.about-intro h2 {
-  font-size: 18px;
-  text-align: center;
-  color: #888686; }
-  .about-intro h2 span {
-    padding-right: 0.2rem;
-    font-size: 20px;
-    color: #504F4F; }
-.about-intro > div {
-  margin-top: 0.5rem; }
-.about-intro h3 {
-  margin: 0.2rem 0;
-  height: 0.35rem;
-  color: #504F4F;
-  font-size: 16px;
-  line-height: 0.35rem;
-  text-align: right;
-  border-bottom: 1px solid #888686; }
-.about-intro p {
-  font-size: 12px;
-  color: #888686;
-  line-height: 14px; }
-  .about-intro p span {
-    font-size: 14px;
-    color: #504F4F; }
-.brief-intro .intro-content {
-  margin-left: -0.15rem; }
-  .brief-intro .intro-content > .float {
-    float: left;
-    width: 33.3%;
-    padding-left: 0.15rem;
-    box-sizing: border-box; }
-    .brief-intro .intro-content > .float .layout {
-      margin: 0 auto;
-      overflow: hidden; }
-.brief-intro .intro-content {
-  margin-top: 0.3rem; }
-  .brief-intro .intro-content p {
-    margin-top: 0.1em; }
-.brief-intro .intro-img {
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 50% 50%;
-  animation: turnaround 700ms ease;
-  -webkit-animation: turnaround 700ms ease;
-  -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  -o-transform-origin: 50% 50%;
-  transform-origin: 50% 50%; }
-  .brief-intro .intro-img h4 {
-    line-height: 0.8rem;
-    text-align: center;
-    color: #fff; }
-.brief-intro .img-orientation {
-  background: url(../images/orientation.jpg) no-repeat 0 0; }
-.brief-intro .img-vision {
-  background: url(../images/vision.jpg) no-repeat 0 0; }
-.brief-intro .img-value {
-  background: url(../images/value.png) no-repeat 0 0; }
-
-.about-intro .intro-content {
-  margin-left: -0.15rem; }
-  .about-intro .intro-content > .float {
-    float: left;
-    width: 33.3%;
-    padding-left: 0.15rem;
-    box-sizing: border-box; }
-    .about-intro .intro-content > .float .layout {
-      margin: 0 auto;
-      overflow: hidden; }
-.about-intro .attitude > div {
-  margin: 0.3rem auto;
-  width: 80%;
-  vertical-align: top; }
-  .about-intro .attitude > div .layout {
-    height: 7em; }
-  .about-intro .attitude > div h4 {
-    background-color: #8AABCA;
-    line-height: 0.6rem;
-    text-align: center;
-    color: #fff; }
-
-.about-intro .founder .ceo {
-  overflow: hidden; }
-  .about-intro .founder .ceo h4 {
-    float: left;
-    width: 0.8rem;
-    background-color: #8AABCA;
-    text-align: center;
-    line-height: 0.6rem;
-    color: #fff;
-    margin-bottom: -500px;
-    padding-bottom: 500px;
-    height: 0.9rem; }
-  .about-intro .founder .ceo p {
-    margin-left: 0.9rem; }
-.about-intro .founder .cxo {
-  margin-top: 0.2rem; }
-  .about-intro .founder .cxo .layout {
-    height: 0.6rem;
-    background-color: #8AABCA;
-    text-align: center;
-    line-height: 0.6rem;
-    color: #fff; }
-
-.about-intro .recruit span {
+.service-content img, .case-content img, .customers-content img, .customers-appraise-content img {
   display: inline-block;
-  height: 0.25rem;
-  line-height: 0.25rem;
+  height: auto;
+  width: 100%;
+  max-height: 400px;
+  min-width: 56px; }
+.service-content h4, .case-content h4, .customers-content h4, .customers-appraise-content h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #504F4F; }
+.service-content p, .case-content p, .customers-content p, .customers-appraise-content p {
   font-size: 12px;
-  width: 1.25rem;
-  color: #fff;
-  text-align: center;
-  background-color: #8AABCA;
-  border-left: 1px solid #fff; }
-.about-intro .recruit img {
-  width: 0.9rem;
-  height: 1rem;
-  border: 4px solid #fff; }
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #888686; }
+.service-content a:hover, .case-content a:hover, .customers-content a:hover, .customers-appraise-content a:hover {
+  display: block;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25); }
+  .service-content a:hover h4, .service-content a:hover p, .case-content a:hover h4, .case-content a:hover p, .customers-content a:hover h4, .customers-content a:hover p, .customers-appraise-content a:hover h4, .customers-appraise-content a:hover p {
+    text-decoration: none; }
 
-@media screen and (max-width: 440px) {
-  .about-content .about-intro {
-    margin-left: 2%;
-    width: 80%; }
-  .about-content p {
-    font-size: 10px; } }
-#container {
-  margin-top: 8em; }
-  #container .first-level {
-    width: 50%;
-    margin-bottom: 1.5em; }
-    #container .first-level li {
-      display: inline-block;
-      width: 12em;
-      height: 3em;
-      line-height: 3em;
-      text-align: center; }
-  #container .second-level li {
-    display: inline-block;
-    width: 1.6rem;
-    height: 0.3em;
-    line-height: 0.3rem;
-    text-align: center;
-    font-size: 12px; }
-  #container .active {
-    background-color: #8AABCA;
-    color: #fff; }
-  #container .section h3 {
-    height: 2em;
-    color: #504F4F;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: left;
-    border-bottom: 1px solid #888686;
-    margin: 0.3rem 0; }
-  #container .intro-content {
-    margin-left: -0.15rem; }
-    #container .intro-content > .float {
-      float: left;
-      width: 33.3%;
-      padding-left: 0.15rem;
-      box-sizing: border-box; }
-      #container .intro-content > .float .layout {
-        margin: 0 auto;
-        overflow: hidden; }
-  #container .float p {
-    color: #888686;
-    font-size: 12px; }
-    #container .float p span {
-      display: inline-block;
-      width: 35%; }
+.customers-appraise-content .img-circle {
+  max-width: 120px; }
 
 /*toolbar*/
 .toolbar {

@@ -16,25 +16,18 @@ $thirdFont: #888686;
 
 /*color*/
 @mixin layout($width) {
-  .intro-content {
-    margin-left: -0.15rem;
+   >div{
+    margin-left: -20px;
 
-    >.float {
+    >div {
       float: left;
       width: $width;
-      padding-left: 0.15rem;
+      padding-left: 20px;
       box-sizing: border-box;
-
-      .layout {
-        margin: 0 auto;
-        // height: 161px;
-        // width: 235px;
-        // background: url(../images/intro1-icon.png) no-repeat;
-        overflow: hidden;
-      }
     }
   }
 }
+
 
 /*h2样式 service case customer*/
 .h2css{
@@ -43,7 +36,7 @@ $thirdFont: #888686;
     // height:50px;
     // line-height:50px;
     // text-align:center;
-    margin:1em auto 0.1rem;
+    //margin:1em auto 0.1rem;
     background-color:#fff;
     // background: linear-gradient(to bottom, $mainColor,$secondColor 50%,$mainColor); 
     // box-shadow:0 2px 2px 2px $thirdColor; 
@@ -55,11 +48,11 @@ $thirdFont: #888686;
       font-size:14px;            
    } 
     //margin:70px auto 30px;
-    padding-left:0.1rem;
-    height:0.5rem;
+    //padding-left:0.1rem;
+    height:50px;
     // color:$secondFont;
     font-size:18px;
-    line-height:0.5rem;
+    line-height:50px;
     text-align:left;     
   }
 

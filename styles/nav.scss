@@ -34,188 +34,253 @@
 // 	}
 // }
 
-
-
-@mixin navheight($fontSize) {
-  nav.top-nav {
-  	height:0.8rem;
-	.logo {
-		height: 0.8rem;
-	    margin: 0.1rem 0.3rem 0.1rem;
-	    // img{
-	    // 	padding: ($height - $imgWidth) / 2 0;
-	    // }
+nav.navbar{	
+   //height:0.3rem;
+   .navbar-header{
+   	//width:90%;
+   }
+  .navbar-brand{
+  	padding:7px 5px;
+  	//width:70%;
+  	display:block;
+  	height: 100%;
+	img{
+		width:35px;
+		display:block;
+		float:left;
+		//height:0.3rem;
 	}
-    li {
-      height: 0.48rem;
-      line-height: 0.48rem;
-      margin-top: 0.16rem;
-      font-size: $fontSize;
-      // a {
-      //   display: inline-block;
-      //   text-align: center;
-      //   width: 100%;
-      //   font-size: 1rem;
-      //   color: $mainFont;
-      // }
-    }
-    .logo {
-      color: $secondFont;
-      width:60%;
+	>div{
+
+		//display: inline-block;
+		//height:100%;
+		margin-left:50px;
+		vertical-align: middle;
+		
+	}
+	h1{ 
+		margin:0 0;
+		//min-width:18px;
+	    font-size:16px;
+	}
+	h2{ 
+		margin:5px 0 0 0;
+		font-size:12px;
+	}
+	p{  //min-width:30px;
+		font-size:14px;
+	}
+   }
+   .navbar-right{
+   	height:100%;
+   	font-size:14px;
+   	li{
+   	height:100%;
+   	line-height:100%;
+   	font-size:14px;
+   	  }
+   }	
+}
+
+@media (min-width:768px) { 
+	nav.navbar{
+	  // .navbar-brand{
+	  // 	width:60%;
+	  // }
+	  background-color: red;
 	  img{
-	    width:0.6rem;
+	  	width:50px;
 	  }
-      >div {
-        // width:20%;
-        display: inline-block;
-        margin-left: 0.1em;
-        h1 {
-          font-size: $fontSize;
-        }
-        span {
-          &:nth-child(2) {
-            margin-left: 5px;
-            font-size: 0.7*$fontSize;
-          }
-        }
-        p {
-          font-size: 0.8*$fontSize;
-        }
+      h1{
+      	font-size: 20px;
       }
-    }
-    .second-nav li a{
-        font-size:0.9*$fontSize;
-    }
-  //   @keyframes navchange {
-  //     0% {
-  //       height: $height*0.8;
-  //       line-height: $height*0.8;
-  //       margin-top: $height*0.1;
-  //     }
-  //     ;
-
-  //     100% {
-  //       height: $height*0.6;
-  //       line-height: $height*0.6;
-  //       margin-top: $height*0.2;
-  //     }
-  //     ;
-  //   }
-  // }
-    // .banner,.seat{
-    //    margin-top: 1rem; 
-    // }
-    // .about-content{
-    //    margin-top: 1rem;          
-    // }
- }
-}
-
-.banner,.seat{
-   margin-top: 1rem; 
-}
-.about-content{
-   margin-top: 1rem;          
-}
-nav.top-nav {
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 100%;
-	background-color: #fff;
-	z-index: 100;
-
-	ul.frist-nav {
-		position: absolute;
-		//left: 60%;
-		right: 20%;
-	}
-	.frist-nav>li {
-		float: left;
-		width: 3em;
-		color: $mainFont;
-		a{
-	        display: inline-block;
-	        font-size:18px;
-	        text-align: center;
-	        width: 100%;
-	        color: $mainFont;
-        }
-		&:hover {
-			background-color: $fourthColor;
-			a {
-				color: #fff;
-			}
-			//@include animation(navchange 500ms ease);
-		}
-	}
-	.frist-nav .icon {
-		display: none;
-		position: relative;
-
-		span {
-			display: inline-block;
-			width: 0.15rem;
-			height: 0.03rem;
-			padding: 0.03rem 0;
-			border-top: 0.03rem solid $fourthColor;
-			border-bottom: 0.03rem solid $fourthColor;
-			background-color: $fourthColor;
-			background-clip: content-box;
-			vertical-align: middle;
-		}
-		&:hover {
-			.second-nav {
-				// background-color: red;
-				display: block;
-				a {
-					color: $mainFont;
-				}
-			}
-		}
-	}
-	.active {
-		background-color: $fourthColor;
-
-		a {
-			color: #fff;
-		}
-	}
-	.logo {
-		float: left;
-	}
-	.second-nav {
-		display: none;
-		position: absolute;
-		background-color: #fff;
-		top: 2em;
-		//height: 110px;
-
-		li {
-			margin-top: 0px;
-			width: 4em;
-			height: 2em;
-			line-height: 2em;
-
-			a {
-				border-bottom: 1px solid $fourthColor;
-			}
-		}
-		li:first-child {
-			margin-top: 0;
-		}
+	  h1,h2{
+	  	display:inline-block;
+	  }
 	}
 }
 
-@media screen and (min-width:768px) { //ipad
-	@include navheight(18px);
-}
-@media screen and (max-width:768px) and (min-width:440px) {
-	@include navheight(16px);
-}
-@media screen and (max-width:440px) and (max-width:320px) { //iphone
-	@include navheight(12px);
-}
+
+// @mixin navheight($fontSize) {
+//   nav.top-nav {
+//   	height:0.7rem;
+// 	.logo {
+// 		height: 0.6rem;
+// 	    margin: 0.1rem 0.3rem 0.1rem;
+// 	    // img{
+// 	    // 	padding: ($height - $imgWidth) / 2 0;
+// 	    // }
+// 	}
+//     li {
+//       height: 0.48rem;
+//       line-height: 0.48rem;
+//       margin-top: 0.16rem;
+//       font-size: $fontSize;
+//       // a {
+//       //   display: inline-block;
+//       //   text-align: center;
+//       //   width: 100%;
+//       //   font-size: 1rem;
+//       //   color: $mainFont;
+//       // }
+//     }
+//     .logo {
+//       color: $secondFont;
+//       width:60%;
+// 	  img{
+// 	    width:0.6rem;
+// 	  }
+//       >div {
+//         // width:20%;
+//         display: inline-block;
+//         margin-left: 0.1em;
+//         h1 {
+//           font-size: $fontSize;
+//         }
+//         span {
+//           &:nth-child(2) {
+//             margin-left: 5px;
+//             font-size: 0.7*$fontSize;
+//           }
+//         }
+//         p {
+//           font-size: 0.8*$fontSize;
+//         }
+//       }
+//     }
+//     .second-nav li a{
+//         //font-size:0.9*$fontSize;
+//     }
+//   //   @keyframes navchange {
+//   //     0% {
+//   //       height: $height*0.8;
+//   //       line-height: $height*0.8;
+//   //       margin-top: $height*0.1;
+//   //     }
+//   //     ;
+
+//   //     100% {
+//   //       height: $height*0.6;
+//   //       line-height: $height*0.6;
+//   //       margin-top: $height*0.2;
+//   //     }
+//   //     ;
+//   //   }
+//   // }
+//     // .banner,.seat{
+//     //    margin-top: 1rem; 
+//     // }
+//     // .about-content{
+//     //    margin-top: 1rem;          
+//     // }
+//  }
+// }
+
+// .banner,.seat{
+//    margin-top: 1rem; 
+// }
+// .about-content{
+//    margin-top: 1rem;          
+// }
+// nav.top-nav {
+// 	position: fixed;
+// 	top: 0;
+// 	right: 0;
+// 	width: 100%;
+// 	background-color: #fff;
+// 	z-index: 100;
+
+// 	ul.frist-nav {
+// 		position: absolute;
+// 		//left: 60%;
+// 		right: 20%;
+// 	}
+// 	.frist-nav>li {
+// 		float: left;
+// 		width: 3em;
+// 		color: $mainFont;
+// 		a{
+// 	        display: inline-block;
+// 	        font-size:18px;
+// 	        text-align: center;
+// 	        width: 100%;
+// 	        color: $mainFont;
+//         }
+// 		&:hover {
+// 			background-color: $fourthColor;
+// 			a {
+// 				color: #fff;
+// 			}
+// 			//@include animation(navchange 500ms ease);
+// 		}
+// 	}
+// 	.frist-nav .icon {
+// 		display: none;
+// 		position: relative;
+
+// 		span {
+// 			display: inline-block;
+// 			width: 0.15rem;
+// 			height: 0.03rem;
+// 			padding: 0.03rem 0;
+// 			border-top: 0.03rem solid $fourthColor;
+// 			border-bottom: 0.03rem solid $fourthColor;
+// 			background-color: $fourthColor;
+// 			background-clip: content-box;
+// 			vertical-align: middle;
+// 		}
+// 		&:hover {
+// 			.second-nav {
+// 				// background-color: red;
+// 				display: block;
+// 				a {
+// 					color: $mainFont;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.active {
+// 		background-color: $fourthColor;
+
+// 		a {
+// 			color: #fff;
+// 		}
+// 	}
+// 	.logo {
+// 		float: left;
+// 	}
+// 	.second-nav {
+// 		display: none;
+// 		position: absolute;
+// 		background-color: #fff;
+// 		top: 2em;
+// 		//height: 110px;
+
+// 		li {
+// 			margin-top: 0px;
+// 			width: 4em;
+// 			height: 2em;
+// 			line-height: 2em;
+
+// 			a {
+// 				border-bottom: 1px solid $fourthColor;
+// 			}
+// 		}
+// 		li:first-child {
+// 			margin-top: 0;
+// 		}
+// 	}
+// }
+
+// @media screen and (min-width:768px) { //ipad
+// 	@include navheight(18px);
+// }
+// @media screen and (max-width:768px) and (min-width:440px) {
+// 	@include navheight(16px);
+// }
+// @media screen and (max-width:440px) and (max-width:320px) { //iphone
+// 	@include navheight(12px);
+// }
 // @media screen and (min-width:320px) {
 // 	@include navheight(0.4rem, 12px,0.3rem);
 // 	.logo p{
