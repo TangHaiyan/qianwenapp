@@ -101,6 +101,20 @@ nav.navbar{
 }
 
 
+footer{
+	.contact{
+	  @extend .h2css		
+	}
+
+	h4{
+		font-size:14px;
+	}
+	h5, p {
+		font-size:12px;
+		display: inline-block;
+	}
+}
+
 // @mixin navheight($fontSize) {
 //   nav.top-nav {
 //   	height:0.7rem;
@@ -305,11 +319,9 @@ nav.navbar{
 }
 
 /*=footer*/
-footer {
-	background-color: #000;
-	color: #fff;
+nav.navbar-footer{
 
-	.footer-nav ul {
+	 ul {
 		margin: 0.2rem 0;
 		height: 0.3rem;
 		line-height: 0.3rem;

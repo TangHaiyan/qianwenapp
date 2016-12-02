@@ -57,14 +57,14 @@ body {
 /*font-size*/
 /*color*/
 /*h2样式 service case customer*/
-.h2css h2, .container h2 {
+.h2css h2, footer .contact h2, .container h2 {
   background-color: #fff;
   color: #032951;
   height: 50px;
   font-size: 18px;
   line-height: 50px;
   text-align: left; }
-  .h2css h2 span, .container h2 span {
+  .h2css h2 span, footer .contact h2 span, .container h2 span {
     margin-left: 5px;
     color: #8AABCA;
     font-size: 14px; }
@@ -107,6 +107,12 @@ nav.navbar .navbar-right {
       font-size: 20px; }
     nav.navbar h1, nav.navbar h2 {
       display: inline-block; } }
+footer h4 {
+  font-size: 14px; }
+footer h5, footer p {
+  font-size: 12px;
+  display: inline-block; }
+
 @media screen and (max-width: 768px) {
   nav.top-nav .frist-nav {
     left: 80%; }
@@ -115,41 +121,38 @@ nav.navbar .navbar-right {
   nav.top-nav .frist-nav .icon {
     display: block; } }
 /*=footer*/
-footer {
-  background-color: #000;
-  color: #fff; }
-  footer .footer-nav ul {
-    margin: 0.2rem 0;
-    height: 0.3rem;
-    line-height: 0.3rem;
-    background-clip: content-box;
-    border-bottom: 1px solid #4F4F4F; }
-  footer li {
-    display: inline-block;
-    width: 0.8rem;
-    text-align: center;
-    border-left: 1px solid; }
-  footer .contact > div {
-    margin-left: -20px; }
-    footer .contact > div > div {
-      float: left;
-      width: 30%;
-      padding-left: 20px;
-      box-sizing: border-box; }
-  footer .contact .contact-content {
-    margin-left: 0.6rem;
-    width: 7rem; }
-  footer .contact > h3 {
+nav.navbar-footer ul {
+  margin: 0.2rem 0;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  background-clip: content-box;
+  border-bottom: 1px solid #4F4F4F; }
+nav.navbar-footer li {
+  display: inline-block;
+  width: 0.8rem;
+  text-align: center;
+  border-left: 1px solid; }
+nav.navbar-footer .contact > div {
+  margin-left: -20px; }
+  nav.navbar-footer .contact > div > div {
     float: left;
-    width: 1rem;
-    height: 1.6rem;
-    font-size: 12px;
-    text-align: center; }
-  .contact-content > div h5, .contact-content > div p {
-    display: inline-block; }
-  footer .contact .QRcord img {
-    width: 0.7rem;
-    height: 0.7rem; }
+    width: 30%;
+    padding-left: 20px;
+    box-sizing: border-box; }
+nav.navbar-footer .contact .contact-content {
+  margin-left: 0.6rem;
+  width: 7rem; }
+nav.navbar-footer .contact > h3 {
+  float: left;
+  width: 1rem;
+  height: 1.6rem;
+  font-size: 12px;
+  text-align: center; }
+.contact-content > div h5, .contact-content > div p {
+  display: inline-block; }
+nav.navbar-footer .contact .QRcord img {
+  width: 0.7rem;
+  height: 0.7rem; }
 
 /*公共部分，导航和底部*/
 .slide {
