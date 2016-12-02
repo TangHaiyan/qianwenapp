@@ -99,14 +99,12 @@ nav.navbar .navbar-right {
     font-size: 14px; }
 
 @media (min-width: 768px) {
-  nav.navbar {
-    background-color: red; }
-    nav.navbar img {
-      width: 50px; }
-    nav.navbar h1 {
-      font-size: 20px; }
-    nav.navbar h1, nav.navbar h2 {
-      display: inline-block; } }
+  nav.navbar img {
+    width: 50px; }
+  nav.navbar h1 {
+    font-size: 20px; }
+  nav.navbar h1, nav.navbar h2 {
+    display: inline-block; } }
 footer h4 {
   font-size: 14px; }
 footer h5, footer p {
