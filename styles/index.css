@@ -165,6 +165,7 @@ nav.navbar-footer .contact .QRcord img {
     height: 100%;
     border: 1px solid #fff; }
     .intros > div h3 {
+      margin: 5px 0;
       font-size: 16px; }
     .intros > div p {
       font-size: 12px; }
